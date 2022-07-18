@@ -5,7 +5,7 @@ plugins {
 }
 
 application {
-    mainClass = 'io.airbyte.integrations.source.netsuite-suiteanalytics.NetsuiteSuiteanalyticsSource'
+    mainClass = 'io.airbyte.integrations.source.netsuite_suiteanalytics.NetsuiteSuiteanalyticsSource'
 }
 
 dependencies {
@@ -15,7 +15,8 @@ dependencies {
     implementation project(':airbyte-integrations:connectors:source-jdbc')
     implementation project(':airbyte-integrations:connectors:source-relational-db')
 
-    //TODO Add jdbc driver import here. Ex: implementation 'com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre14'
+    // Add jdbc driver import here. Ex: implementation 'com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre14'
+    implementation files('libs/NQjc.jar')
 
     testImplementation testFixtures(project(':airbyte-integrations:connectors:source-jdbc'))
 
