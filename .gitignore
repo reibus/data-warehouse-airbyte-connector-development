@@ -68,3 +68,6 @@ resources/examples/airflow/logs/*
 
 # Summary.md keeps getting added and we just don't like it
 docs/SUMMARY.md
+
+# libs for source-netsuite-suitanalytics connector
+airbyte-integrations/connectors/source-netsuite-suiteanalytics/libs/NQjc.jar
