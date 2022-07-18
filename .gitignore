@@ -12,6 +12,7 @@ data
 .settings
 .vscode
 **/gmon.out
+integration_tests
 static_checker_reports/
 
 # Logs
