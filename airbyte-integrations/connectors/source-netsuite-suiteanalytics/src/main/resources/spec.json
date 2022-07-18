@@ -4,7 +4,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "NetsuiteSuiteanalytics Source Spec",
     "type": "object",
-    "required": ["host", "port", "server_data_source", "username", "replication_method"],
+    "required": ["host", "port", "server_data_source", "username", "replication_method", "account_id", "role_id"],
     "additionalProperties": false,
     "properties": {
       "host": {
