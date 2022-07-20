@@ -56,8 +56,8 @@ public class NetsuiteSuiteanalyticsSource extends AbstractJdbcSource<JDBCType> i
 
   @Override
   public Set<String> getExcludedInternalNameSpaces() {
-    // Add tables to exclude, Ex "INFORMATION_SCHEMA", "sys", "spt_fallback_db", etc
-    return Set.of("OA_TABLES", "OA_COLUMNS", "OA_TYPES", "OA_INFO", "OA_STATISTICS", "OA_FKEYS", "OA_PROC", "OA_PROCCOLUMNS");
+    // excluding system tables - i.e. - "OA_TABLES", "OA_COLUMNS", "OA_TYPES", "OA_INFO", "OA_STATISTICS", "OA_FKEYS", "OA_PROC", "OA_PROCCOLUMNS"
+    return Set.of("SYSTEM");
   }
 
   public static void main(final String[] args) throws Exception {
